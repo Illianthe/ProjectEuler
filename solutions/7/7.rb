@@ -1,6 +1,6 @@
 # Problem #7
 
-require "../lib/utility.rb"
+require "../../lib/utility.rb"
 include Utility
 
 def nth_prime(n)

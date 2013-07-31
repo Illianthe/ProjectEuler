@@ -1,6 +1,6 @@
 # Problem #10 - Summation of primes
 
-require "../lib/utility.rb"
+require "../../lib/utility.rb"
 include Utility
 
 def summation_of_primes(max)
