@@ -1,5 +1,8 @@
 # Problem #7
 
+require "../lib/utility.rb"
+include Utility
+
 def nth_prime(n)
   found = 0
   current = 2
@@ -10,14 +13,6 @@ def nth_prime(n)
     end
     current += 1
   end
-end
-
-# Checks if a number is prime via trial division
-def is_prime?(n)
-  (2..Math.sqrt(n).floor).each do |i|
-    return false if n % i == 0
-  end
-  true
 end
 
 p nth_prime(10001)
