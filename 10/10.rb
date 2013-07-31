@@ -29,7 +29,7 @@ def summation_of_primes_2(max)
 
     sum += p
 
-    # Find next prime (or nil if none left)
+    # Find next prime
     while !sieve[p] and p < sieve.size
       p += 1
     end
