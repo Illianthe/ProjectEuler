@@ -10,9 +10,9 @@ def lattice_paths(grid_size)
 
   # Base case - at the bottom and right edges, there is only one route remaining.
   # Technically the bottom-right point has no routes remaining, but it doesn't matter here.
-  (0..20).each do |i|
-    intersections[i][20] = 1
-    intersections[20][i] = 1
+  (0..grid_size).each do |i|
+    intersections[i][grid_size] = 1
+    intersections[grid_size][i] = 1
   end
 
   calculate_routes(0, 0, intersections)
