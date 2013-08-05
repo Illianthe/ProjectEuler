@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Project Euler - Problem #1</title>
+	<script type="text/javascript">
+		var multiples = function() {
+			var sum = 0;
+			for (var i = 0; i < 1000; i += 1) {
+				if (i % 3 == 0 || i % 5 == 0) {
+					sum += i;
+				}
+			}
+			return sum;
+		}
+
+		window.onload = function() {
+			document.getElementById("answer").innerText = multiples();
+		}
+	</script>
+</head>
+
+<body>
+	<p>The answer is: <span id="answer"></span></p>
+</body>
+</html>
