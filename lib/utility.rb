@@ -6,4 +6,18 @@ module Utility
     end
     true
   end
+
+  # Returns an array of all the proper divisors of n
+  def proper_divisors(n)
+    divisors = []
+    (1..Math.sqrt(n).floor).each do |i|
+      if n % i == 0
+        divisors << i
+        if (i > 1) and (n / i != i)
+          divisors << n / i
+        end
+      end
+    end
+    divisors
+  end
 end

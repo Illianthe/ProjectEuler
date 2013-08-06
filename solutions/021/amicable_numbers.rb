@@ -1,5 +1,8 @@
 # Problem #21
 
+require "../../lib/utility.rb"
+include Utility
+
 def amicable_numbers
   d = Hash.new
 
@@ -17,14 +20,6 @@ def amicable_numbers
   end
 
   return sum_of_amicable_numbers
-end
-
-def proper_divisors(n)
-  divisors = []
-  (1..(n / 2).floor).each do |i|
-    divisors << i if n % i == 0
-  end
-  divisors
 end
 
 p amicable_numbers
