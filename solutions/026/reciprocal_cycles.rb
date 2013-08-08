@@ -29,11 +29,11 @@ def reciprocal_cycles
   end
 
   # Return the key with the longest repeating cycle
-  largest_key = 0
+  largest = [0, 0]
   cycle_length.each do |key, value|
-    largest_key = key if value > largest_key
+    largest = [key, value] if value > largest[1]
   end
-  return largest_key
+  return largest[0]
 end
 
 p reciprocal_cycles
