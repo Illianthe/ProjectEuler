@@ -20,4 +20,12 @@ module Utility
     end
     divisors
   end
+
+  def factorial(n)
+    product = 1
+    1.upto(n) do |i|
+      product *= i
+    end
+    product
+  end
 end

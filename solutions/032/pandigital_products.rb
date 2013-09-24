@@ -1,18 +1,7 @@
 # Problem #32
 
-class Integer
-  # Splits a number into an array containing its digits
-  def to_digits
-    self.to_s.split("").map { |i| i.to_i }
-  end
-end
-
-class Array
-  # Converts an array of digits to an integer
-  def to_i
-    self.join.to_i
-  end
-end
+require "../../lib/integer.rb"
+require "../../lib/array.rb"
 
 # Approach: We note that we can set an upper bound and lower bound
 # to this problem. Because the multiplier/multiplicand/product must
